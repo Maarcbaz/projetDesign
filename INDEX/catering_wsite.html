@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Catering</title>
+		<meta author="maarcbaz" content="The Little Catering site" />
+		<link rel="stylesheet" href="../STYLES/catering_wsite.css" />
+		<link rel="icon" href="../ICONS/tablesetting2.jpg" type="image" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- || NAVIGATION BAR  -->
+
+		<header class="header_hero">
+			<nav class="nav_hero">
+				<a href="#" class="left" style="float: left">Gourtmet au Catering</a>
+				<div class="nav-sm">
+					<a href="#contact">Cotact</a>
+					<a href="#menu">Menu</a>
+					<a href="#about">About</a>
+				</div>
+				<a href="#header" class="menu-bar">&#9776;</a>
+			</nav>
+			<div class="hd-img">
+				<img
+					src="../IMAGES/burger-dinner-food-hamburger-wallpaper-preview.jpg"
+					class="header-img"
+					alt="there is an image here"
+					width="500"
+					height="400" />
+				<p class="img-text">Le Catering</p>
+			</div>
+		</header>
+
+		<main>
+			<div class="container container-1" id="about">
+				<img src="../IMAGES/tablesetting2.jpg" alt="table setting image here" />
+
+				<div class="content content-1">
+					<h2>About Catering</h2>
+					<p>Tradition since 1889</p>
+					<h5>
+						The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+						sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur.We only use seasonal ingredients.
+					</h5>
+					<h6>
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+						officia deserunt mollit anim id est laborum consectetur adipiscing
+						elit, sed do eiusmod temporincididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat.
+					</h6>
+				</div>
+			</div>
+			<hr />
+			<div class="container-2" id="menu">
+				<div class="content-2">
+					<h3>Our Menu</h3>
+					<h5>Bread Basket</h5>
+					<p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+					<h5>Honey Almond Granola with Fruits</h5>
+					<p>
+						Natural cereal of honey toasted oats, raisins, almonds and dates
+						7.00
+					</p>
+					<h5>Belgian Waffle</h5>
+					<p>Vanilla flavored batter with malted flour 7.50</p>
+					<h5>Scrambled eggs</h5>
+					<p>
+						Scrambled eggs, roasted red pepper and garlic, with green onions
+						7.50
+					</p>
+					<h5>Blueberry Pancakes</h5>
+					<p>With syrup, butter and lots of berries 8.50</p>
+				</div>
+				<img src="../IMAGES/tablesetting.jpg" alt="" />
+			</div>
+
+			<div class="container-3" id="contact">
+				<div class="content-3">
+					<h2>Contact</h2>
+					<p>
+						We offer full-service catering for any event, large or small. We
+						understand your needs and we will cater the food to satisfy the
+						biggerst criteria of them all, both look and taste. Do not hesitate
+						to contact us.
+					</p>
+					<p class="address">
+						Catering Service, 42nd Living St, 43043 New York, NY
+					</p>
+					<p>
+						You can also contact us by phone 00553123-2323 or email
+						catering@catering.com, or you can send us a message here:
+					</p>
+				</div>
+				<form action="/action_page.php" method="post" autocomplete="on">
+					<input
+						type="text"
+						required
+						name="name"
+						id="name"
+						placeholder="Name" />
+					<input required
+						type="number"
+						name="number"
+						value="2"
+						max="600"
+						min="1"
+						id="number"
+						placeholder="Order" />
+					<input type="datetime-local" required name="date-time" id="date-time" />
+					<input
+						type="tel"
+						name="message"
+						id="message"
+						placeholder="Message/ Special requirement" />
+					<button type="submit" class="submit">send message</button>
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<p>Powered by <a href="#">w3.css</a></p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+/* || GENERAL RSET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1rem !important;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+/* || VARIABLES  */
+
+:root {
+    --HEADER-BGCOLOR: #f44336;
+    --WHITE-COLOR: #fff;
+    --WHITESMOKE: whitesmoke;
+    --LIGHT-GRAY: lightgray;
+    --BLACK-COLOR: #000000;
+    --BLACK-COLORMAIN: #00000017;
+    --BLACK-COLORMAIN2: #0000009f;
+    --BOX-SHADOW: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    --LIGHTER-GRAY: #706f6f31;
+    --DARK-GRAY: rgba(0, 0, 0, 0.61);
+
+
+}
+
+/* || NAVIGATION BAR  */
+
+
+nav {
+    display: flex;
+    background-color: var(--HEADER-BGCOLOR);
+    height: 2.2rem;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: var(--BOX-SHADOW);
+    z-index: 1;
+    background-size: 100%;
+
+}
+
+
+
+nav a {
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--WHITE-COLOR);
+
+    height: inherit;
+    display: grid;
+    place-content: center;
+}
+
+.active {
+    background-color: var(--WHITESMOKE);
+    color: var(--BLACK-COLOR);
+}
+
+
+nav a:hover:not(.active) {
+    background-color: var(--WHITESMOKE);
+    color: var(--BLACK-COLOR);
+}
+
+
+
+a:first-child:hover {
+    background-color: var(--LIGHT-GRAY);
+}
+
+/* || HEADER BACKGROUND-COLOR  */
+
+header div {
+    background: var(--HEADER-BGCOLOR);
+    background-size: 100%;
+    height: 400px;
+    width: 100%;
+}
+
+/* || HEADER BACKGROUND CONTENT  */
+
+header div {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1,
+header .page {
+    font-size: 4rem !important;
+    font-weight: normal;
+
+}
+
+
+header div {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 2rem;
+    color: var(--WHITE-COLOR);
+}
+
+button:hover {
+    background-color: var(--WHITE-COLOR);
+    color: var(--BLACK-COLOR);
+}
+
+button {
+    padding: 10px 13px;
+    color: var(--WHITE-COLOR);
+    background-color: var(--BLACK-COLOR);
+    border: none !important;
+}
+
+
+/* || MAIN COTENT AREA FIRST SECTION */
+
+
+.content-1 {
+    margin: 2% 5%;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration-color: red;
+    color: #000;
+
+
+}
+.cont1  {
+    white-space: nowrap;
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+h5 {
+    margin: 10px 0;
+}
+h6 {
+    font-weight: normal;
+}
+.content-1 i {
+    color: var(--HEADER-BGCOLOR);
+    font-size: 150px;
+    margin-top: 30px;  
+}
+.content-1 {
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+
+/* main, .content-same {
+    display: flex !important;
+
+} */
+
+.start {
+    background: 30px;
+    color: 
+}

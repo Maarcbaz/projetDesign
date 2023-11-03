@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Little Website For A Cafe Shop">
+    <title>Cafe website</title>
+    <link rel="stylesheet" href="../STYLES/cafe.css">
+    <link rel="icon" href="/ICONS/coffeehouse2.jpg" type="image">
+</head>
+<body>
+
+    <!-- || HEADER  -->
+    <header>
+        <!-- || NAVIGATION BAR  -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#where">Where</a>
+        </nav>
+        <!-- || HEADER BACKGROUN-IMAGE  -->
+        <header class="header" id="home">
+            <p class="cafe">
+                <span>the</span> 
+            Cafe</p>
+        </header>
+        <div class="op">
+        <span class="open">Open from 6am to 5pm</span>
+        <span class="open2">15 Adr street, 5015</span>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- || MAIN COTENT/FIRST-CONTAINER  -->
+        <div class="container" id="about">
+
+
+        <h5 class="about">ABOUT THE CAFE</h5>
+
+        <p class="content-1">
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p class="content-2">
+            In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.
+        </p>
+        <div class="con-1">
+        <p class="content-3">
+            "Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.
+        </p>
+            <span class="content-4">
+<br>
+            Chef, Coffeeist and Owner: Liam Brown
+</span>
+        </div>
+
+        <img src="../IMAGES/coffeeshop.jpg" alt="there is an image here">
+        <p class="address">
+            <p>
+             <span class="bold">Opening hours:</span>
+            <span> everyday from 6am to 5pm.</span>
+            </p>
+            <p class="space">
+                <span class="bold">
+                    Address: 
+                </span>
+                <span> 15 Adr street, 5015, NY</span>
+            </p>
+        </p>
+        </div>
+
+        <!-- || MAIN CONTENT/SECOND-CONTAINER  -->
+
+        <div class="container-2" id="menu">
+            <span class="menuu about naur">THE MENU</span>
+            
+            <div class="cont-row">
+         <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>        
+            </div>
+            <!-- || NAV CONTENT  -->
+            <div class="Eat" id="eat">
+                <h5 class="bread">Bread Basket</h5>
+                <p class="assort">
+                    Assortment of fresh baked fruits breads and muffins 5.50
+                </p>
+                <h5 class="bread">
+                    Honey Almond Granola with Fruits
+                </h5>
+                <p class="assort">
+                    Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+                </p>
+                <h5 class="bread">
+                    Belgian Waffle
+                </h5>
+                <p class="assort">
+                    Vanilla flavored batter with malted flour 7.50
+                </p>
+                <h5 class="bread">
+                    Scrambled eggs
+                </h5>
+                <p class="assort">
+                    Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+                </p>
+                <h5 class="bread">
+                    Blueberry Pancakes
+                </h5>
+                <p class="assort">
+                    With syrup, butter and lots of berries 8.50
+                </p>
+            </div>
+            <!-- <div class="drink" id="Drinks">
+                <h5 class="bread">Coffee</h5>
+            </div> -->
+            <br><br>
+            <img src="../IMAGES/coffeehouse2.jpg" alt="there is an image here">
+
+            <div class="where" id="where">
+                <br><br>
+                <p class="about where-abou">
+                    Where to find us
+                </p>
+                <p class="assort asso">
+                    Find us at some address at some place.
+                </p>
+
+                <img src="../IMAGES/map.jpg" alt="there is an image here">
+
+                <p class="loca">
+                    <span class="fly">FYI!</span>&nbsp;
+                    We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                </p>
+                <p class="table">
+                    <span class="reserve">
+                        Reserve
+                    </span>
+                    a table, ask for today's special or just send us a message:
+                </p>
+
+                <form action="/action_page.php" id="form">
+
+                    <input type="text" name="name" id="name" placeholder="Name">
+
+
+                    <input type="number" name="range" id="range">
+
+
+                    <input type="datetime-local" name="date/time" id="date/time">
+                    <input type="text" name="message" id="message" placeholder="Message \ Special requirements">
+                     <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="fot">
+            Powered by <a href="#">w3.css</a>
+        </p>
+    </footer>
+    <script src="/JAVASCRIPT/cafe.js"></script>
+</body>
+</html>
+
+
+

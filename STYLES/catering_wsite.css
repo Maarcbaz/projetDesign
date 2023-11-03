@@ -1,0 +1,299 @@
+/* || GENERAL RULESET  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: Verdana, sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 8rem;
+}
+
+/* || VARIABLES  */
+
+:root {
+    /* || COLOR      */
+    --NAVBC: rgba(0, 0, 0, .1);
+    --NAVCOL: #000;
+    --HOVER: #9c9595;
+    --HOVEERCOL: navajowhite;
+
+}
+
+/* || NAVIGATION BAR  */
+nav {
+    background-color: var(--NAVBC);
+    backdrop-filter: blur(50px);
+    font-size: 1.3rem;
+    padding: 10px 14px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+nav a {
+    color: #cd8d2d;
+    text-decoration: none;
+    padding: 5px 24px;
+    cursor: pointer;
+    font-weight: 900;
+
+}
+
+a {
+    color: var(--NAVCOL);
+    float: right;
+}
+
+nav a:hover {
+    background-color: #123;
+    color: rgb(255, 201, 120);
+}
+
+.menu-bar {
+    display: none;
+}
+
+.left {
+    font-size: 70%;
+}
+
+/* || HEADER BACKGROUND-IMAGE  */
+
+.hd-img {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    max-width: 4000px;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    color: navajowhite;
+    font-size: 2rem;
+}
+
+/* || MAIN CONTENT  */
+
+.container {
+    margin: 4rem auto;
+    max-width: 900px;
+    gap: 2rem;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+main img {
+    max-width: 350px;
+    height: auto;
+}
+
+.content-1 h2 {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.content-1 h5,
+.content-1 h6 {
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.content-1 h6 {
+    opacity: .7;
+}
+
+/* || MENU SECTION  */
+
+.container-2 {
+    display: flex;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.content-2 {
+    display: flex;
+    gap: 1rem;
+    flex-flow: column nowrap;
+}
+
+.content-2 h3 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.content-2 h5 {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.content-2 p {
+    font-size: .8rem;
+}
+
+/* || MAIN CONTACT  */
+
+.container-3 {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.content-3 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.content-3 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.content-3 p {
+    font-size: .9rem;
+}
+
+.address {
+    color: #607d8b;
+}
+
+/* || FORM  */
+form:not(.submit) {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid navajowhite;
+    padding: 1rem;
+}
+
+button {
+    border: none;
+    background-color: #eee;
+    padding: .5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navajowhite;
+}
+
+a:last-of-type:hover {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    background-color: #eee;
+    height: 70px;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* || MOBILE VIEW  */
+
+@media screen and (max-width: 580px) {
+    .nav-sm {
+        display: none;
+    }
+
+    .nav_hero {
+        font-size: 1rem;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .container-1 img {
+        display: none;
+    }
+
+    .container-1 {
+
+        margin: 1rem .5rem;
+    }
+
+    .container-2 {
+        flex-flow: column nowrap;
+        max-width: 550px;
+        margin: 2rem auto;
+    }
+
+    .container-2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-3 {
+        margin: 2rem 1rem;
+    }
+
+}
+
+/* || TABLET VIEW  */
+@media screen and (max-width: 768px) {
+    .content-1 h6 {
+        display: none;
+    }
+
+    .container-1 img {
+        gap: 1rem;
+        margin: 2rem 1rem;
+
+    }
+
+    .content-1 {
+
+        margin: 2rem .5rem;
+    }
+
+    .container-2 {
+        flex-flow: column nowrap;
+        max-width: 750px;
+        margin: 2rem auto;
+    }
+
+    .container-2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-3 {
+        margin: 2rem 1rem;
+    }
+}
