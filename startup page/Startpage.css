@@ -190,6 +190,14 @@ footer a:last-of-type {
     opacity: .8;
 }
 
+footer .fa {
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
 /* || MEDIA QUERIES  */
 /* || MOBILE VIEW  */
 
