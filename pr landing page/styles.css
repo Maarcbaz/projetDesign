@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     background-color: #151716;
 
@@ -200,6 +200,7 @@ footer {
 .footer-1 {
     height: 50px;
     text-align: right;
+    display: flex;
 }
 footer a {
     color: #fff;
@@ -252,4 +253,7 @@ footer a:last-of-type {
         font-size: 70%;
     }
 
+    footer {
+        
+    }
 }
