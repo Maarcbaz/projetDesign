@@ -189,12 +189,14 @@ main button {
     font-size: .5em;
 }
 
-.card h5 {
+.card h4 {
     font-size: clamp(1.1rem, 9vw, 1.3rem);
+    font-size: 80%;
 }
 
-.card-content {
+.card-content p  {
     font-size: clamp(1rem, 9vw, 1.3rem);
+    font-size: 75%;
 }
 
 footer {
@@ -212,6 +214,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     padding-left: 40px;
+    font-size: 80%;
 }
 
 footer a:last-of-type {
@@ -222,6 +225,14 @@ footer a:last-of-type {
     text-align: right;
     color: #fff;
     padding: 0 20px;
+}
+
+.copy {
+    font-size: 70%;
+}
+
+.footer-1 a:hover {
+    color: navajowhite;
 }
 
 @media screen and (max-width: 560px) {
